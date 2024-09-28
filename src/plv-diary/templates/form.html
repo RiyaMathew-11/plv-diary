@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Responsive Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div class="w-full h-full flex justify-center items-center">
+        <form class="w-full max-w-lg bg-white p-8 rounded-lg shadow-md space-y-6">
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="text" placeholder="Intervention" required />
+
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="text" placeholder="Subject" required />
+
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="number" placeholder="Number of clients" required />
+
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="date" placeholder="Date" required />
+
+            <textarea class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                      placeholder="Narration" rows="4" required></textarea>
+
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="file" placeholder="Supporting documents - attach" />
+
+            <input class="w-full p-4 border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                   type="text" placeholder="Contact/Address" required />
+
+            <!-- Submit button -->
+            <button type="submit"
+                    class="w-full py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">
+                Submit
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
