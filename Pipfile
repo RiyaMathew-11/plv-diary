@@ -10,7 +10,7 @@ werkzeug = "==2.0.3"
 [dev-packages]
 pytest = "~=7.0"
 flake8 = "~=4.0"
-black = "~=22.0"
+black = "~=24.3"
 isort = "*"
 pre-commit = "~=2.17.0"
 autoflake = "*"
