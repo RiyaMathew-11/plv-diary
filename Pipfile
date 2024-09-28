@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "==2.0.3"
+werkzeug = "==2.0.3"
+
+[dev-packages]
+pytest = "~=7.0"
+flake8 = "~=4.0"
+black = "~=22.0"
+isort = "*"
+pre-commit = "~=2.17.0"
+autoflake = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
