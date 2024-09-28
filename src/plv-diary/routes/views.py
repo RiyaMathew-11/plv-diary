@@ -11,3 +11,8 @@ def index():
 @main_bp.route("/form")
 def form():
     return render_template("form.html")
+
+
+@main_bp.route("/entry_view")
+def entry_view():
+    return render_template("entry_view.html")

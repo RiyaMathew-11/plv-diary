@@ -1,48 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full bg-gray-100">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PLV Diary</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="{{ url_for('static', filename='js/db.js') }}"></script>
-    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
-</head>
-<body class="h-full flex flex-col">
+    <script
+      type="module"
+      src="{{ url_for('static', filename='js/db.js') }}"
+    ></script>
+    <script
+      type="module"
+      src="{{ url_for('static', filename='js/main.js') }}"
+    ></script>
+  </head>
+  <body class="h-full flex flex-col">
     <div class="flex-grow flex flex-col max-w-3xl mx-auto w-full p-4 space-y-6">
-        <!-- Header Section -->
-        <header class="bg-white shadow rounded-lg p-6">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">PLV Diary</h1>
-            <div class="border-t border-gray-200 pt-4 mt-4">
-                <h2 class="text-xl font-semibold text-gray-800">John Doe</h2>
-                <p class="text-gray-600 mt-1">Para-Legal Volunteer | 5 years experience</p>
-                <p class="text-gray-500 mt-2">Dedicated to providing legal assistance and support to those in need. Specializing in family law and civil rights.</p>
-            </div>
-        </header>
+      <!-- Header Section -->
+      <header class="bg-white shadow rounded-lg p-6">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">PLV Diary</h1>
+        <div class="border-t border-gray-200 pt-4 mt-4">
+          <h2 class="text-xl font-semibold text-gray-800">John Doe</h2>
+          <p class="text-gray-600 mt-1">
+            Para-Legal Volunteer | 5 years experience
+          </p>
+          <p class="text-gray-500 mt-2">
+            Dedicated to providing legal assistance and support to those in
+            need. Specializing in family law and civil rights.
+          </p>
+        </div>
+      </header>
 
-        <!-- Recent Entries Section -->
-        <section class="bg-white shadow rounded-lg p-6">
-            <div class="flex justify-between items-center mb-4">
-                <h2 class="text-2xl font-semibold text-gray-800">Recent Entries</h2>
-                <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    View all
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-            </div>
-            <div id="recent-entries" class="space-y-4">
-            </div>
-        </section>
+      <!-- Recent Entries Section -->
+      <section class="bg-white shadow rounded-lg p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-semibold text-gray-800">Recent Entries</h2>
+          <a
+            href="#"
+            class="text-blue-600 hover:text-blue-800 flex items-center"
+          >
+            View all
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div id="recent-entries" class="space-y-4"></div>
+      </section>
     </div>
 
     <!-- Add Entry Button -->
     <div class="fixed bottom-6 right-6">
-        <a href="{{ url_for('main.form') }}" class="bg-blue-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-            </svg>
-        </a>
+      <a
+        href="{{ url_for('main.form') }}"
+        class="bg-blue-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          ></path>
+        </svg>
+      </a>
     </div>
-</body>
+  </body>
 </html>
